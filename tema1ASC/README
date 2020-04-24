@@ -1,0 +1,21 @@
+# Arhitectura Sistemelor de calcul - Tema 1 - Marketplace, Martie 2020
+# Mircea Alexandru-Alin 332CA
+
+# Enunt
+http://ocw.cs.pub.ro/courses/asc/teme/tema1
+
+*   Am implementat tema pe baza sursei completate la lab 2, din care am 
+sters lock-urile si am pastrat doar semaforul pentru producers (1 per producer) 
+
+*   Ce ar fi de mentionat este ca in marketplace id-ul unui producator este dat de
+ intrarea (index-ul) lui in lista de cozi ale producatorilor.
+
+*   Atunci cand se adauga un producator se adauga inca o lista in cozi si un semafor
+ in lista de semafoare. La fel si in cazul consumatorilor cu cart-urile. atunci cand
+ se goleste un cart nu se ia altul ci se goleste cel curent si se refoloseste.
+ 
+*   Semafoarele au ramas doar pentru producatori pentru a le limita accesul la coada
+atunci cand se umple.
+
+A fost o tema lejera si vreau sa va multumesc pentru aceasta gura de aer intr-o perioada
+ atat de aglomerata dpv al volumului de task-uri de la facultate!
