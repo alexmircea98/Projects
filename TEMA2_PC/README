@@ -1,0 +1,51 @@
+README Tema2_PC 
+Mircea Alexandru-Alin 322CA
+
+
+Detalii implementare:
+
+    Am utilizat scheletul din laboratorul cu multiplexarea tcp si pe baza lui
+am construit tema.
+
+ Client TCP:
+
+    Clientul se conecteaza si primeste confirmare, apoi exact ca in cerinta, 
+poate da comenzi de subscribe/unsubscribe si exit. (!!! pentru parsare am 
+folosit strtok si de aceea la comanda de unsubscribe trenuie pus un spatiu
+dupa numele topic-ului, altfel nu va merge... UwU )
+Am pus fd_zero si fd_set in interiorul buclei infinite pentru a se reseta,
+altfel, clientul nu mai primea mesaje daca nu apasa enter/se bloca la stdin.
+
+Server-ul:
+
+    Pentru gestionarea clientilor si topic-urilor am definit doua structuri:
+una de tip client ("subscriber') care contine soket-ul, id-ul, SF si un
+storage de mesaje daca sf este 1  si  una de tip topic care are un nume
+si o lista de abonati carora le trimite.
+
+    Server-ul se opreste si deconecteaza tot cand primeste exit, la fel si
+ clientii.
+
+    Gestionarea clientilor UDP: daca vine o cerere noua de conexiune, serv o
+verifica dupa id si o accepta, apoi verifica daca id-ul a mai fost conectat si
+daca are mesaje nereceptionate; altfel a venit un mesaj de la un client conectat
+si executa comanda dupa caz. In caz de comanda gresita ar trebui sa fie primit
+de catre client un mesaj cu ce nu e bine. Toti clientii conectati sunt tinuti 
+in vector-ul cliTCP.
+
+    Gestionarea UDP: server-ul primeste pe un soket ror continutul udp si il 
+sorteaza/parseaza si trimite la clienti.
+Daca un topic udp a fost primit pentru prima data, server-ul creaza topicul si
+il introduce in lista. Dupa aceasta, serverul poate abona clienti la acel topic.
+Prin abonare, insemnand ca introduce acel client in lista de abonati a topicului.
+In cazul in care clientul este deconectat si are sf 1, mesajul este salvat in 
+lista de mesaje a clientului din lista de abonati, nu din cea de clienti
+conectati.
+
+Note: atunci cand un topic gaseste un 
+client deconectat cu sf 1, serv salveaza acel mesaj in lista de clientului, 
+atunci cand se reconecteaza clientul, acesta este gasit ca si client reconectat,
+dar apare cu lista de mesaje goala. 
+
+
+
