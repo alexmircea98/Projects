@@ -16,6 +16,3 @@ sters lock-urile si am pastrat doar semaforul pentru producers (1 per producer)
  
 *   Semafoarele au ramas doar pentru producatori pentru a le limita accesul la coada
 atunci cand se umple.
-
-A fost o tema lejera si vreau sa va multumesc pentru aceasta gura de aer intr-o perioada
- atat de aglomerata dpv al volumului de task-uri de la facultate!
