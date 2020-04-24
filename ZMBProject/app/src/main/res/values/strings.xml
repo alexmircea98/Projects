@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">ZMBProject</string>
+    <string name="startButton">Start</string>
+    <string name="back">Back</string>
+    <string name="connect">Connect</string>
+    <string name="Host">Host</string>
+    <string name="hostTitle">HOST</string>
+    <string name="ConnectTitle">connectTitle</string>
+    <string name="connectTitle">CONNECT</string>
+    <string name="backBut">Back</string>
+    <string name="backButCon">Button</string>
+    <string name="initStat">Status</string>
+    <string name="status_connected">Status:PlayerConnected</string>
+    <string name="error_missing_permissions">Error:MissingPermisions</string>
+    <string name="status_searching">Status:PlayerSearching</string>
+    <string name="playButton">Play</string>
+    <string name="discover">Discover</string>
+    <string name="advertise">Advertise</string>
+    <string name="distanceB">Distance</string>
+    <string name="options">Options</string>
+    <string name="title_activity_game_options">GameOptions</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="backg">backg</string>
+    <string name="KILL">Kill</string>
+    <string name="showme">ShowMe</string>
+    <string name="start_vote">start vote</string>
+</resources>

@@ -1,0 +1,15 @@
+1,2d0
+< bought Tea(name='Pai Mu Tan', price=9, type='White')
+< bought Tea(name='Vietnam Oolong', price=10, type='Oolong')
+787c785
+< cons142cons144 bought Tea(name='Jasmine', price=6, type='Green')
+---
+> cons142 bought Tea(name='Vietnam Oolong', price=10, type='Oolong')
+800a799
+> cons144 bought Tea(name='Jasmine', price=6, type='Green')
+964a964
+> cons155 bought Tea(name='Pai Mu Tan', price=9, type='White')
+966d965
+< cons155cons181 bought Tea(name='Pai Mu Tan', price=9, type='White')
+1339a1339
+> cons181 bought Tea(name='Pai Mu Tan', price=9, type='White')

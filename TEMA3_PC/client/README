@@ -1,0 +1,23 @@
+*/ Readme Tema 3 PC
+ / Mircea Alexandru-Alin
+ / 322CA
+ /*
+
+Ca baza am utilizat clientul http de la laborator si pe baza lui am completat
+tema.
+La fiecare task am urmarit cerinta in rezolvare adaptand request-ul.
+Parsarea raspunsului am facut-o in functia parse_data, care primeste raspunsul,
+il imparte pe linii cu strtok si salveaza cookie-urile intr-un vector de string
+si datele/fisierul json in string-ul dat2parse. Transform dat2parse intr-un
+obiect("obiect") json cu functii din parson si tot cu parson accesez campurile
+din el.
+In functie de ce primesc ca date am utilizat cateva string-uri in care lipesc
+bucatile de date pentru a le pune in request (ex. praji pentru cookies, token
+pentru autentificare etc).
+
+La 5, pentru get-ul pentru vreme am folosit functia get_ip din laboratorul dns
+pentru obtinerea de ip a site-ului web. Aici am mai declarat cateva string-uri
+de ajutor ip, host si url in care am impartit datele.
+
+Pentru compilare si rulare poti utiliza: make run
+!!!!!!!!!!!!!!
