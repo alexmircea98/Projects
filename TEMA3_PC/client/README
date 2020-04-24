@@ -3,6 +3,8 @@
  / 322CA
  /*
 
+/* HTTP GET AND POST puzzle */
+
 Ca baza am utilizat clientul http de la laborator si pe baza lui am completat
 tema.
 La fiecare task am urmarit cerinta in rezolvare adaptand request-ul.
